@@ -1,0 +1,34 @@
+---
+title: "Strategy Unit Data Science Coffee Disaster Counter ☕ 💥"
+format:
+  dashboard:
+    orientation: columns
+    nav-buttons:
+       - icon: github
+         href: https://github.com/The-Strategy-Unit/coffee-disaster
+---
+
+## Column {width=60%}
+
+```{r}
+last_disaster_date <- readLines("last_disaster.txt", n = 1)
+last_disaster_date <- as.Date(last_disaster_date)
+
+days_since <- as.numeric(difftime(Sys.Date(), last_disaster_date, units = "days"))
+```
+
+```{r}
+  bslib::value_box(
+    title = "Days since last disaster",
+    value = days_since,
+    showcase = bsicons::bs_icon("cup-hot-fill"),
+    max_height = 300,
+    htmltools::p(glue::glue("Last disaster: {format(last_disaster_date, '%B %d, %Y')}"))
+  )
+```
+
+## Column {width=40%}
+
+When a coffee disaster occurs, update the `last_disaster.txt` file with the disaster date in YYYY-MM-DD format.
+
+The counter will automatically update on the next scheduled refresh.
