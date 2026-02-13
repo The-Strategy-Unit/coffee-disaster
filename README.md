@@ -4,7 +4,7 @@ In the data science team we love coffee. We also seem to love accidentally pouri
 
 
 
-This dashboard tracls the number of days since our last coffee disaster.
+This dashboard tracks the number of days since our last coffee disaster.
 
 ## Why does this exist?
 
