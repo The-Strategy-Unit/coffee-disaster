@@ -12,4 +12,4 @@ This sidequest project is a useful place to test out GitHub actions, play with C
 
 
 
-![](C:\Users\Rhian.Davies\Documents\github\coffee-disaster\aeropress.png)
+![](aeropress.png)
