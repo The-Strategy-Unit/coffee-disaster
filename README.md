@@ -2,7 +2,9 @@
 
 In the data science team we love coffee. We also seem to love accidentally pouring it all over our keyboards.
 
+When a coffee disaster occurs, update the last_disaster.txt file with the disaster date in YYYY-MM-DD format.
 
+The counter will automatically update on the next scheduled refresh
 
 This dashboard tracks the number of days since our last coffee disaster.
 
