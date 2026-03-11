@@ -11,8 +11,8 @@ format:
 ## Column {width=60%}
 
 ```{r}
-last_disaster_date <- readLines("last_disaster.txt", n = 1)
-last_disaster_date <- as.Date(last_disaster_date)
+coffee_disasters <- read.csv("coffee-disaster-tracking.csv")
+last_disaster_date <- max(as.Date(coffee_disasters$Date))
 
 days_since <- as.numeric(difftime(Sys.Date(), last_disaster_date, units = "days"))
 ```
