@@ -51,6 +51,6 @@ ggplot2::ggplot(coffee_disasters) +
 
 ## Column {width=40%}
 
-When a coffee disaster occurs, update the `last_disaster.txt` file with the disaster date in YYYY-MM-DD format.
+When a coffee disaster occurs, update the `coffee-disaster-tracking.csv` file with the disaster date in YYYY-MM-DD format and your GitHub username on the bottom row. 
 
 The counter will automatically update on the next scheduled refresh.
