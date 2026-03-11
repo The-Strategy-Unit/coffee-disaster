@@ -8,6 +8,8 @@ format:
          href: https://github.com/The-Strategy-Unit/coffee-disaster
 ---
 
+# Tracker
+
 ## Column {width=60%}
 
 ```{r}
@@ -26,6 +28,14 @@ days_since <- as.numeric(difftime(Sys.Date(), last_disaster_date, units = "days"
     htmltools::p(glue::glue("Last disaster: {format(last_disaster_date, '%B %d, %Y')}"))
   )
 ```
+
+## Column {width=40%}
+
+When a coffee disaster occurs, update the `coffee-disaster-tracking.csv` file with the disaster date in YYYY-MM-DD format and your GitHub username on the bottom row. 
+
+The counter will automatically update on the next scheduled refresh.
+
+# Statistics
 
 ```{r}
 ggplot2::ggplot(coffee_disasters) +
@@ -48,9 +58,3 @@ ggplot2::ggplot(coffee_disasters) +
   NHSRtheme::theme_nhs()
 
 ```
-
-## Column {width=40%}
-
-When a coffee disaster occurs, update the `coffee-disaster-tracking.csv` file with the disaster date in YYYY-MM-DD format and your GitHub username on the bottom row. 
-
-The counter will automatically update on the next scheduled refresh.
