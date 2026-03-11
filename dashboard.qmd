@@ -27,6 +27,28 @@ days_since <- as.numeric(difftime(Sys.Date(), last_disaster_date, units = "days"
   )
 ```
 
+```{r}
+ggplot2::ggplot(coffee_disasters) +
+  ggplot2::geom_bar(
+    ggplot2::aes(
+      y = Person,
+      fill = Person
+    ),
+    stat = "count"
+  ) +
+  ggplot2::scale_x_continuous(
+    breaks = seq(
+      0,
+      ceiling(max(table(coffee_disasters$Person))),
+      by = 1
+    )
+  ) +
+  ggplot2::xlab("Count") +
+  ggplot2::ggtitle("Coffee disasters per person") +
+  NHSRtheme::theme_nhs()
+
+```
+
 ## Column {width=40%}
 
 When a coffee disaster occurs, update the `last_disaster.txt` file with the disaster date in YYYY-MM-DD format.
