@@ -31,7 +31,7 @@ days_since <- as.numeric(difftime(Sys.Date(), last_disaster_date, units = "days"
 
 ## Column {width=40%}
 
-When a coffee disaster occurs, update the `coffee-disaster-tracking.csv` file with the disaster date in YYYY-MM-DD format and your GitHub username on the bottom row. 
+When a coffee disaster occurs, update the `coffee-disaster-tracking.csv` file with the disaster date in YYYY-MM-DD format and your GitHub username on the bottom row.
 
 The counter will automatically update on the next scheduled refresh.
 
